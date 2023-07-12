@@ -19,14 +19,24 @@ public class Game {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String title;
+
     @Column(name = "game_year")
     private Integer year;
+
     private String genre;
-    private String plataform;
+
+    private String platforms;
+
     private Double score;
+
     private String imgUrl;
+
+    @Column(columnDefinition = "TEXT")
     private String shortDescription;
+
+    @Column(columnDefinition = "TEXT")
     private String longDescription;
 
 //    public Game() {
@@ -116,16 +126,17 @@ public class Game {
 //        this.longDescription = longDescription;
 //    }
 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Game game = (Game) o;
-        return Objects.equals(id, game.id) && Objects.equals(title, game.title) && Objects.equals(year, game.year) && Objects.equals(genre, game.genre) && Objects.equals(plataform, game.plataform) && Objects.equals(score, game.score) && Objects.equals(imgUrl, game.imgUrl) && Objects.equals(shortDescription, game.shortDescription) && Objects.equals(longDescription, game.longDescription);
+        return Objects.equals(id, game.id) && Objects.equals(title, game.title) && Objects.equals(year, game.year) && Objects.equals(genre, game.genre) && Objects.equals(platforms, game.platforms) && Objects.equals(score, game.score) && Objects.equals(imgUrl, game.imgUrl) && Objects.equals(shortDescription, game.shortDescription) && Objects.equals(longDescription, game.longDescription);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, title, year, genre, plataform, score, imgUrl, shortDescription, longDescription);
+        return Objects.hash(id, title, year, genre, platforms, score, imgUrl, shortDescription, longDescription);
     }
 }
