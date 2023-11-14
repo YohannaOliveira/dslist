@@ -8,11 +8,11 @@ import lombok.Setter;
 
 import java.util.Objects;
 
-@AllArgsConstructor
-@NoArgsConstructor
 @Getter
 @Setter
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "tb_game")
 public class Game {
 
