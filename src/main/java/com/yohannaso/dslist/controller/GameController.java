@@ -1,6 +1,5 @@
 package com.yohannaso.dslist.controller;
 
-
 import com.yohannaso.dslist.dto.GameDto;
 import com.yohannaso.dslist.dto.GameMinDto;
 import com.yohannaso.dslist.service.GameService;
