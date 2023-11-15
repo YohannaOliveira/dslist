@@ -1,6 +1,6 @@
 package com.yohannaso.dslist.dto;
 
-import com.yohannaso.dslist.entities.Game;
+import com.yohannaso.dslist.entity.Game;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

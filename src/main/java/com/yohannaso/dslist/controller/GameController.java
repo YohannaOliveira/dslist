@@ -1,8 +1,8 @@
-package com.yohannaso.dslist.controllers;
+package com.yohannaso.dslist.controller;
 
 
 import com.yohannaso.dslist.dto.GameMinDto;
-import com.yohannaso.dslist.services.GameService;
+import com.yohannaso.dslist.service.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
